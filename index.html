@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify.com</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="img/bookify-high-resolution-logo.png" alt="Booking.com Logo" /></a>
+            </div>
+            <nav class="navbar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Stays</a></li>
+                    <li class="nav-item"><a href="index-flights.html">Flights</a></li>
+                    <li class="nav-item"><a href="index-rentals.html">Car Rentals</a></li>
+                    <li class="nav-item"><a href="index-Atraction.html">Attractions</a></li>
+                    <li class="nav-item"><a href="index-Taxi.html">Airport Taxis</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-right">
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn">Eng</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#" onclick="changeButtonText('Al')">Al</a>
+                      <a href="#" onclick="changeButtonText('Sp')">Sp</a>
+                      <a href="#" onclick="changeButtonText('Fr')">Fr</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button onclick="toggleDropdown()" class="dropbtn2">EUR€</button>
+                    <div id="myDropdown2" class="dropdown-content2">
+                      <a href="#" onclick="changeButtonText2('USD$')">USD$</a>
+                      <a href="#" onclick="changeButtonText2('GPB£')">GBP£</a>
+                      <a href="#" onclick="changeButtonText2('ALL')">ALL</a>
+                    </div>
+                  </div>
+                <div class="user-options">
+                    <a href="index-SignUp.html">Register</a>
+                    <a href="index-SignUp.html">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- <section class="search-section">
+            <div class="search-container">
+                <h1>Find your next destination</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Where are you going?" id="destination-input">
+                    <input type="date" id="check-in-date">
+                    <input type="date" id="check-out-date">
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+        </section> -->
+
+        <div class="iframe-container">
+            <iframe src="https://wonderplan.ai/v2/trip-planner" width="100%" height="600" frameborder="0"></iframe>
+        </div>
+
+        <section class="destinations-section">
+            <h2>Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <a href="https://www.booking.com/searchresults.en-gb.html?ss=Paris&ssne=Paris&ssne_untouched=Paris&label=en-xk-booking-desktop-K5RdKGOM9t0KdK65F_UkKAS652828998412%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1028594%3Ali%3Adec%3Adm&sid=8024272eeb5e79083570b3606493638c&aid=2311236&lang=en-gb&sb=1&src_elem=sb&src=index&dest_id=-1456928&dest_type=city&group_adults=2&no_rooms=1&group_children=0"><img src="img/paris.png" alt="Paris"></a>
+                    <h3>Paris</h3>
+                </div>
+                <div class="destination-card">
+                  <a href="https://www.booking.com/searchresults.en-gb.html?ss=New+York%2C+New+York%2C+United+States&ssne=Paris&ssne_untouched=Paris&label=en-xk-booking-desktop-K5RdKGOM9t0KdK65F_UkKAS652828998412%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1028594%3Ali%3Adec%3Adm&sid=8024272eeb5e79083570b3606493638c&aid=2311236&lang=en-gb&sb=1&src_elem=sb&src=searchresults&dest_id=20088325&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=ca036bc9917a03b1&ac_meta=GhBjOTJmNmJjYzEyMjIwNDU3IAAoATICZW46A05ld0AASgBQAA%3D%3D&checkin=2024-06-07&checkout=2024-06-10&group_adults=2&no_rooms=1&group_children=0"><img src="img/newyork.png" alt="New York"></a>
+                    <h3>New York</h3>
+                </div>
+                <div class="destination-card">
+                    <a href="https://www.booking.com/searchresults.en-gb.html?ss=Tokyo%2C+Tokyo-to%2C+Japan&ssne=New+York&ssne_untouched=New+York&label=en-xk-booking-desktop-K5RdKGOM9t0KdK65F_UkKAS652828998412%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1028594%3Ali%3Adec%3Adm&sid=8024272eeb5e79083570b3606493638c&aid=2311236&lang=en-gb&sb=1&src_elem=sb&src=searchresults&dest_id=-246227&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=931e6bd26b050243&ac_meta=GhA2M2I0NmJlZmQyZjYwMzEwIAAoATICZW46BHRva3lAAEoAUAA%3D&checkin=2024-06-07&checkout=2024-06-10&group_adults=2&no_rooms=1&group_children=0"><img src="img/tokyo.png" alt="Tokyo"></a>
+                    <h3>Tokyo</h3>
+                </div>
+                <div class="destination-card">
+                    <a href="https://www.booking.com/searchresults.en-gb.html?ss=Sydney%2C+New+South+Wales%2C+Australia&ssne=Tokyo&ssne_untouched=Tokyo&label=en-xk-booking-desktop-K5RdKGOM9t0KdK65F_UkKAS652828998412%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1028594%3Ali%3Adec%3Adm&sid=8024272eeb5e79083570b3606493638c&aid=2311236&lang=en-gb&sb=1&src_elem=sb&src=searchresults&dest_id=-1603135&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=d38b6bf435590115&ac_meta=GhBlMDUwNmMwODIzODEwMjM5IAAoATICZW46A3N5ZEAASgBQAA%3D%3D&checkin=2024-06-07&checkout=2024-06-10&group_adults=2&no_rooms=1&group_children=0"><img src="img/sydney.png" alt="Sydney"></a>
+                    <h3>Sydney</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="promotions-section">
+            <h2>Latest Deals</h2>
+            <div class="promotions-grid">
+                <div class="promotion-card">
+                    <img src="img/summer-sale.png" alt="Deal 1">
+                    <h3>Summer Sale</h3>
+                    <p>Up to 50% off on selected hotels.</p>
+                </div>
+                <div class="promotion-card">
+                    <img src="img/weekend-getaways.png" alt="Deal 2">
+                    <h3>Weekend Getaways</h3>
+                    <p>Special prices for weekend stays.</p>
+                </div>
+                <div class="promotion-card">
+                    <img src="img/EBD.png" alt="Deal 3">
+                    <h3>Early Bird Discounts</h3>
+                    <p>Book early and save more.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/laberionshpk">Facebook</a></li>
+                    <li><a href="https://x.com/?lang=en">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+<script>
+    window.__ow = window.__ow || {};
+    window.__ow.organizationId = "c5df3d81-2517-4bf3-98b0-d85f3b55bb48";
+    window.__ow.template_id = "b6abc49d-5995-4620-90f3-b4493a513157";
+    window.__ow.integration_name = "manual_settings";
+    window.__ow.product_name = "chatbot";   
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+  </script>
+  <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+  <!-- End of ChatBot code -->
+</body>
+</html>
+

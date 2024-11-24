@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register/Sign In</title>
+    <link rel="stylesheet" href="css/style-SignUp.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="img/bookify-high-resolution-logo.png" alt="Booking.com Logo" /></a>
+            </div>
+            <nav class="navbar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Stays</a></li>
+                    <li class="nav-item"><a href="index-flights.html">Flights</a></li>
+                    <li class="nav-item"><a href="index-rentals.html">Car Rentals</a></li>
+                    <li class="nav-item"><a href="index-Atraction.html">Attractions</a></li>
+                    <li class="nav-item"><a href="index-taxi.html">Airport Taxis</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-right">
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn">Eng</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#" onclick="changeButtonText('Al')">Al</a>
+                      <a href="#" onclick="changeButtonText('Sp')">Sp</a>
+                      <a href="#" onclick="changeButtonText('Fr')">Fr</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button onclick="toggleDropdown()" class="dropbtn2">EUR€</button>
+                    <div id="myDropdown2" class="dropdown-content2">
+                      <a href="#" onclick="changeButtonText2('USD$')">USD$</a>
+                      <a href="#" onclick="changeButtonText2('GPB£')">GBP£</a>
+                      <a href="#" onclick="changeButtonText2('ALL')">ALL</a>
+                    </div>
+                  </div>
+                <div class="user-options">
+                    <a href="#">Register</a>
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1>Sign in or create an account</h1>
+
+    <form action="SignIn">
+        <label for="Sign in" id="label1">Email address</label>
+        <br><br>
+        <input type="text" name="EmailAddress" id="EmailAddress" placeholder="Enter your email address" required>
+    </form>
+
+    <button id="btn"><a href="index.html">Continue with email</a></button>
+
+    <br><br>
+
+    <h3>──── or use one of these options ────</h3>
+
+    <br><br>
+
+    <div class="imgGallery" style="text-align: center;"> 
+        <a href="https://web.facebook.com/login"><img src="img/facebook.png" alt="facebook" style="height: 90px; width: 90px; padding: 25px;"></a>
+        <a href="https://accounts.google.com/"><img src="img/google.png" alt="google" style="width: 90px; width: 90px; padding: 25px;"></a>
+        <a href="https://appleid.apple.com/sign-in"><img src="img/apple.png" alt="apple" style="height: 90px; width: 90px; padding: 25px;"></a>
+    </div>
+
+    <br><br><br>
+
+    <div class="footer">
+        <div class="terms">By signing in or creating an account, you agree with our 
+            <a target="_blank"  href="https://www.booking.com/content/terms.en-gb.html?aid=2311236" class="terms&conditions">
+                <span>Terms &amp; conditions</span>
+            </a> and <a target="_blank" href="https://www.booking.com/content/privacy.en-gb.html?aid=2311236" class="privacy">
+                <span>Privacy statement</span></a>
+        </div>
+        <div class="Copyright">
+            All rights reserved. 
+            <br>
+            Copyright (2006 - 2024) - Booking.com™ 
+        </div>
+    </div>
+
+    <script src="js/main-taxi.js"></script>
+</body>
+</html>
